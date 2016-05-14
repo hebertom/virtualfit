@@ -46,7 +46,7 @@ $cupon = new Cupon();
                     <!--<li><a href="#palestrantes">Palestrantes</a></li>-->
                     <!--<li><a href="login.html">Login (Pegar Certificado)</a></li>-->
                 </ul>
-                <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+                <!--<a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>-->
             </div>
         </nav>
     </div>
@@ -61,12 +61,13 @@ $cupon = new Cupon();
                 <div class="row left">
                     <a href="login.html" id="inscrever" class="btn-large waves-effect waves-light teal lighten-1">Quero participar!</a>
                 </div>-->
-                
+
                 <!--<a href="./index.php" class="btn button-collapse"></a>-->
             </div>
         </div>
         <div class="parallax">
-            <img style="width: 100%; height: auto;" src="<?php echo $_GET['img'] ?>" alt="Virtual Fit"></div>
+            <img style="align-self: center; width: 100%; height: auto;" src="img/<?php echo $_GET['img'] ?>" alt="Virtual Fit">
+        </div>
     </div>
 
     <div id="fb-root"></div>
@@ -84,7 +85,7 @@ $cupon = new Cupon();
            line-height: 20px;
            padding: 10px;
            text-shadow: 0 -1px 0 #354c8c;
-           white-space: nowrap;" href="https://www.facebook.com/sharer/sharer.php?u=http%3A//ejec.co/img/123.png">Compartilhar</a>
+           white-space: nowrap;" href="https://www.facebook.com/sharer/sharer.php?u=http%3A//ejec.co/img/<?php echo $_GET['img'] ?>">Compartilhar</a>
 
     </div>
 
@@ -111,9 +112,9 @@ $cupon = new Cupon();
             }, 10000);
 
             document.getElementById("cupon").style.display = 'block';
-            
-            
-            
+
+
+
 //        document.getElementById("cupon").style.visibility = "visible";
 
         });
@@ -151,7 +152,7 @@ $cupon = new Cupon();
         <div id="something" class="fb-share-button" 
              data-href="http://ejec.co/img/123.png">
         </div>-->
-    
+
     <footer class="page-footer teal">
         <div class="footer-copyright center">
             <div class="container">
