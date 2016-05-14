@@ -2,10 +2,7 @@
 
 class Cupon {
 
-    public function geraCupon($url) {
-        $cupon = md5($url);
-
-
+    public function geraCupon() {
         return $this->generatePassword(6);
     }
 
